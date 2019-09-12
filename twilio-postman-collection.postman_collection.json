@@ -10,338 +10,1607 @@
 			"name": "Programmable SMS",
 			"item": [
 				{
-					"name": "Create a Message",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"name": "Content-Type",
-								"value": "application/x-www-form-urlencoded",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "From",
-									"value": "+15017122661",
-									"type": "text"
+					"name": "Message Resource",
+					"item": [
+						{
+							"name": "Create a Message",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "From",
+											"value": "+15017122661",
+											"type": "text"
+										},
+										{
+											"key": "To",
+											"value": "+15558675310",
+											"type": "text"
+										},
+										{
+											"key": "Body",
+											"value": "Your Message",
+											"type": "text"
+										}
+									]
 								},
-								{
-									"key": "To",
-									"value": "+15558675310",
-									"type": "text"
-								},
-								{
-									"key": "Body",
-									"value": "Your Message",
-									"type": "text"
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Messages.json"
+									]
 								}
-							]
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages.json",
-							"protocol": "https",
-							"host": [
-								"api",
-								"twilio",
-								"com"
-							],
-							"path": [
-								"2010-04-01",
-								"Accounts",
-								"{{AccountSID}}",
-								"Messages.json"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create a Message and specify a StatusCallback URL",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"name": "Content-Type",
-								"type": "text",
-								"value": "application/x-www-form-urlencoded"
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "From",
-									"value": "+15017122661",
-									"type": "text"
+						{
+							"name": "Create a Message and specify a StatusCallback URL",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "From",
+											"value": "+15017122661",
+											"type": "text"
+										},
+										{
+											"key": "To",
+											"value": "+15558675310",
+											"type": "text"
+										},
+										{
+											"key": "Body",
+											"value": "Your Message",
+											"type": "text"
+										},
+										{
+											"key": "StatusCallback",
+											"value": "https://webhook.site/d14ac9e1-5734-4338-8511-a3845c14930b",
+											"type": "text"
+										}
+									]
 								},
-								{
-									"key": "To",
-									"value": "+15558675310",
-									"type": "text"
-								},
-								{
-									"key": "Body",
-									"value": "Your Message",
-									"type": "text"
-								},
-								{
-									"key": "StatusCallback",
-									"value": "https://webhook.site/d14ac9e1-5734-4338-8511-a3845c14930b",
-									"type": "text"
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Messages.json"
+									]
 								}
-							]
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages.json",
-							"protocol": "https",
-							"host": [
-								"api",
-								"twilio",
-								"com"
-							],
-							"path": [
-								"2010-04-01",
-								"Accounts",
-								"{{AccountSID}}",
-								"Messages.json"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Fetch Message",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-							"protocol": "https",
-							"host": [
-								"api",
-								"twilio",
-								"com"
-							],
-							"path": [
-								"2010-04-01",
-								"Accounts",
-								"{{AccountSID}}",
-								"Messages",
-								"MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "List all messages",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages.json?PageSize=20",
-							"protocol": "https",
-							"host": [
-								"api",
-								"twilio",
-								"com"
-							],
-							"path": [
-								"2010-04-01",
-								"Accounts",
-								"{{AccountSID}}",
-								"Messages.json"
-							],
-							"query": [
-								{
-									"key": "PageSize",
-									"value": "20"
+						{
+							"name": "Fetch Message",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Messages",
+										"MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
+									]
 								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "List messages matching filter criteria",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages.json?DateSent=2016-08-31T00%3A00%3A00Z&From=%2B15017122661&To=%2B15558675310&PageSize=20",
-							"protocol": "https",
-							"host": [
-								"api",
-								"twilio",
-								"com"
-							],
-							"path": [
-								"2010-04-01",
-								"Accounts",
-								"{{AccountSID}}",
-								"Messages.json"
-							],
-							"query": [
-								{
-									"key": "DateSent",
-									"value": "2016-08-31T00%3A00%3A00Z"
-								},
-								{
-									"key": "From",
-									"value": "%2B15017122661"
-								},
-								{
-									"key": "To",
-									"value": "%2B15558675310"
-								},
-								{
-									"key": "PageSize",
-									"value": "20"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "List messages (filter by 'before sent' date)",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages.json?DateSent%3C=2019-03-01&PageSize=20",
-							"protocol": "https",
-							"host": [
-								"api",
-								"twilio",
-								"com"
-							],
-							"path": [
-								"2010-04-01",
-								"Accounts",
-								"{{AccountSID}}",
-								"Messages.json"
-							],
-							"query": [
-								{
-									"key": "DateSent%3C",
-									"value": "2019-03-01"
-								},
-								{
-									"key": "PageSize",
-									"value": "20"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "List messages (filter by a period of time)",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages.json?DateSent%3C=2019-03-01&DateSent%3E=2019-01-01&PageSize=20",
-							"protocol": "https",
-							"host": [
-								"api",
-								"twilio",
-								"com"
-							],
-							"path": [
-								"2010-04-01",
-								"Accounts",
-								"{{AccountSID}}",
-								"Messages.json"
-							],
-							"query": [
-								{
-									"key": "DateSent%3C",
-									"value": "2019-03-01"
-								},
-								{
-									"key": "DateSent%3E",
-									"value": "2019-01-01"
-								},
-								{
-									"key": "PageSize",
-									"value": "20"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Redact a message",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"name": "Content-Type",
-								"value": "application/x-www-form-urlencoded",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "Body",
-									"value": "",
-									"type": "text"
-								}
-							]
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-							"protocol": "https",
-							"host": [
-								"api",
-								"twilio",
-								"com"
-							],
-							"path": [
-								"2010-04-01",
-								"Accounts",
-								"{{AccountSID}}",
-								"Messages",
-								"MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-							]
+						{
+							"name": "List all messages",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages.json?PageSize=20",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Messages.json"
+									],
+									"query": [
+										{
+											"key": "PageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List messages matching filter criteria",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages.json?DateSent=2016-08-31T00%3A00%3A00Z&From=%2B15017122661&To=%2B15558675310&PageSize=20",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Messages.json"
+									],
+									"query": [
+										{
+											"key": "DateSent",
+											"value": "2016-08-31T00%3A00%3A00Z"
+										},
+										{
+											"key": "From",
+											"value": "%2B15017122661"
+										},
+										{
+											"key": "To",
+											"value": "%2B15558675310"
+										},
+										{
+											"key": "PageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List messages (filter by 'before sent' date)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages.json?DateSent%3C=2019-03-01&PageSize=20",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Messages.json"
+									],
+									"query": [
+										{
+											"key": "DateSent%3C",
+											"value": "2019-03-01"
+										},
+										{
+											"key": "PageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List messages (filter by a period of time)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages.json?DateSent%3C=2019-03-01&DateSent%3E=2019-01-01&PageSize=20",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Messages.json"
+									],
+									"query": [
+										{
+											"key": "DateSent%3C",
+											"value": "2019-03-01"
+										},
+										{
+											"key": "DateSent%3E",
+											"value": "2019-01-01"
+										},
+										{
+											"key": "PageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Redact a message",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "Body",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Messages",
+										"MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Message",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Messages",
+										"MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					],
+					"_postman_isSubFolder": true
 				},
 				{
-					"name": "Delete Message",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-							"protocol": "https",
-							"host": [
-								"api",
-								"twilio",
-								"com"
-							],
-							"path": [
-								"2010-04-01",
-								"Accounts",
-								"{{AccountSID}}",
-								"Messages",
-								"MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-							]
+					"name": "Media Resource",
+					"item": [
+						{
+							"name": "Fetch Media",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Media/MEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Messages",
+										"MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+										"Media",
+										"MEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read Media",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Media.json?PageSize=20",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Messages",
+										"MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+										"Media.json"
+									],
+									"query": [
+										{
+											"key": "PageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Media from your account",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Media/MEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Messages",
+										"MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+										"Media",
+										"MEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Service Resource",
+					"item": [
+						{
+							"name": "Create a Messaging Service",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "FriendlyName",
+											"value": "friendly_name",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://messaging.twilio.com/v1/Services",
+									"protocol": "https",
+									"host": [
+										"messaging",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"v1",
+										"Services"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetch A Service",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://messaging.twilio.com/v1/Services/MGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+									"protocol": "https",
+									"host": [
+										"messaging",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"v1",
+										"Services",
+										"MGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Messaging Services",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://messaging.twilio.com/v1/Services?PageSize=20",
+									"protocol": "https",
+									"host": [
+										"messaging",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"v1",
+										"Services"
+									],
+									"query": [
+										{
+											"key": "PageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update a Service",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "FriendlyName",
+											"value": "friendly_name",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://messaging.twilio.com/v1/Services/MGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+									"protocol": "https",
+									"host": [
+										"messaging",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"v1",
+										"Services",
+										"MGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete a Service",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://messaging.twilio.com/v1/Services/MGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+									"protocol": "https",
+									"host": [
+										"messaging",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"v1",
+										"Services",
+										"MGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Pricing Resource",
+					"item": [
+						{
+							"name": "List Countries with Messaging Service",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://pricing.twilio.com/v1/Messaging/Countries",
+									"protocol": "https",
+									"host": [
+										"pricing",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"v1",
+										"Messaging",
+										"Countries"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetch Messaging Prices for a Country",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://pricing.twilio.com/v1/Messaging/Countries/US",
+									"protocol": "https",
+									"host": [
+										"pricing",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"v1",
+										"Messaging",
+										"Countries",
+										"US"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Programmable Voice",
+			"item": [
+				{
+					"name": "Call Resource",
+					"item": [
+						{
+							"name": "Create a Call",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "Url",
+											"value": "http://demo.twilio.com/docs/voice.xml",
+											"type": "text"
+										},
+										{
+											"key": "To",
+											"value": "+15558675310",
+											"type": "text"
+										},
+										{
+											"key": "From",
+											"value": "+15017122661",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a Call and specify a StatusCallback URL",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls.json?Method=GET&StatusCallback=https://example.com/events&StatusCallbackMethod=POST&Url=http://demo.twilio.com/docs/voice.xml&To=+15017122661&From=+15558675310",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls.json"
+									],
+									"query": [
+										{
+											"key": "Method",
+											"value": "GET"
+										},
+										{
+											"key": "StatusCallback",
+											"value": "https://example.com/events"
+										},
+										{
+											"key": "StatusCallbackMethod",
+											"value": "POST"
+										},
+										{
+											"key": "Url",
+											"value": "http://demo.twilio.com/docs/voice.xml"
+										},
+										{
+											"key": "To",
+											"value": "+15017122661"
+										},
+										{
+											"key": "From",
+											"value": "+15558675310"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a Call and specify a StatusCallbackEvent",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "Method",
+											"value": "GET",
+											"type": "text"
+										},
+										{
+											"key": "StatusCallback",
+											"value": "https://example.com/events",
+											"type": "text"
+										},
+										{
+											"key": "StatusCallbackEvent",
+											"value": "initiated",
+											"type": "text"
+										},
+										{
+											"key": "StatusCallbackEvent",
+											"value": "answered",
+											"type": "text"
+										},
+										{
+											"key": "StatusCallbackMethod",
+											"value": "POST",
+											"type": "text"
+										},
+										{
+											"key": "Url",
+											"value": "http://demo.twilio.com/docs/voice.xml",
+											"type": "text"
+										},
+										{
+											"key": "To",
+											"value": "+15017122661",
+											"type": "text"
+										},
+										{
+											"key": "From",
+											"value": "+15558675310",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetch a Call",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls",
+										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read calls",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls.json?PageSize=20",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls.json"
+									],
+									"query": [
+										{
+											"key": "PageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read calls (filter by start date)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls.json?StartTime=2009-07-06T00%3A00%3A00Z&Status=completed&PageSize=20",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls.json"
+									],
+									"query": [
+										{
+											"key": "StartTime",
+											"value": "2009-07-06T00%3A00%3A00Z"
+										},
+										{
+											"key": "Status",
+											"value": "completed"
+										},
+										{
+											"key": "PageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read calls (filter by 'after start' date)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls.json?Status=completed&StartTime%3E=2009-07-06T00%3A00%3A00Z&PageSize=20",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls.json"
+									],
+									"query": [
+										{
+											"key": "Status",
+											"value": "completed"
+										},
+										{
+											"key": "StartTime%3E",
+											"value": "2009-07-06T00%3A00%3A00Z"
+										},
+										{
+											"key": "PageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read calls (filter by a period of time)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls.json?Status=in-progress&StartTime%3C=2009-07-06T00%3A00%3A00Z&StartTime%3E=2009-07-04T00%3A00%3A00Z&PageSize=20",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls.json"
+									],
+									"query": [
+										{
+											"key": "Status",
+											"value": "in-progress"
+										},
+										{
+											"key": "StartTime%3C",
+											"value": "2009-07-06T00%3A00%3A00Z"
+										},
+										{
+											"key": "StartTime%3E",
+											"value": "2009-07-04T00%3A00%3A00Z"
+										},
+										{
+											"key": "PageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read calls (filter by call status and phone number)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls.json?Status=busy&To=%2B15558675310&PageSize=20",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls.json"
+									],
+									"query": [
+										{
+											"key": "Status",
+											"value": "busy"
+										},
+										{
+											"key": "To",
+											"value": "%2B15558675310"
+										},
+										{
+											"key": "PageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read calls (filter by calls from a specific device)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls.json?From=client%3Acharlie&PageSize=20",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls.json"
+									],
+									"query": [
+										{
+											"key": "From",
+											"value": "client%3Acharlie"
+										},
+										{
+											"key": "PageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update a call (redirect)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "Method",
+											"value": "POST",
+											"type": "text"
+										},
+										{
+											"key": "Url",
+											"value": "http://demo.twilio.com/docs/voice.xml",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls",
+										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update a call (terminate)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "Status",
+											"value": "completed",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls",
+										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete a call",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls",
+										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Feedback Resource",
+					"item": [
+						{
+							"name": "Create Feedback",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "QualityScore",
+											"value": "5",
+											"description": "Call Quality expressed as an integer 1 to 5",
+											"type": "text"
+										},
+										{
+											"key": "Issue",
+											"value": "dropped-call",
+											"description": "Optional",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Feedback.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls",
+										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+										"Feedback.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetch Feedback",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls//Feedback.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls",
+										"",
+										"Feedback.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create feedback summary",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "StartDate",
+											"value": "2019-09-10",
+											"type": "text"
+										},
+										{
+											"key": "EndDate",
+											"value": "2019-09-15",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/FeedbackSummary.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls",
+										"FeedbackSummary.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Fetch Feedback Summary",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/FeedbackSummary/FSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls",
+										"FeedbackSummary",
+										"FSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Feedback Summary",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/FeedbackSummary/FSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Calls",
+										"FeedbackSummary",
+										"FSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Conference",
+					"item": [
+						{
+							"name": "Fetch a Conference",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Conferences",
+										"CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List all Conferences",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences.json?PageSize=20",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Conferences.json"
+									],
+									"query": [
+										{
+											"key": "PageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List an in-progress Conference",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences.json?FriendlyName=MyRoom&Status=in-progress&PageSize=20",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Conferences.json"
+									],
+									"query": [
+										{
+											"key": "FriendlyName",
+											"value": "MyRoom"
+										},
+										{
+											"key": "Status",
+											"value": "in-progress"
+										},
+										{
+											"key": "PageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Conferences that started on a given date",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences.json?DateCreated=2009-07-06&Status=completed&PageSize=20",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Conferences.json"
+									],
+									"query": [
+										{
+											"key": "DateCreated",
+											"value": "2009-07-06"
+										},
+										{
+											"key": "Status",
+											"value": "completed"
+										},
+										{
+											"key": "PageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List in-progress conferences on or after a given date",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences.json?Status=in-progress&DateCreated=2009-07-06&PageSize=20",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Conferences.json"
+									],
+									"query": [
+										{
+											"key": "Status",
+											"value": "in-progress"
+										},
+										{
+											"key": "DateCreated",
+											"value": "2009-07-06"
+										},
+										{
+											"key": "PageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "End a Conference",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "Status",
+											"value": "completed",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Conferences",
+										"CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Announce something into the conference",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "AccounceUrl",
+											"value": "https://example.com/announce",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twilio",
+										"com"
+									],
+									"path": [
+										"2010-04-01",
+										"Accounts",
+										"{{AccountSID}}",
+										"Conferences",
+										"CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
 				}
 			]
 		}
