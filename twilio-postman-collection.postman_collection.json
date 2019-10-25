@@ -3,7 +3,7 @@
 		"_postman_id": "029cf53b-8eaf-4d6e-a618-6ef04685cc25",
 		"name": "twilio-postman-collection",
 		"description": "Postman Collection of Twilio API Requests",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
@@ -44,21 +44,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Messages.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages.json"
 							},
 							"response": []
 						},
@@ -99,21 +85,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Messages.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages.json"
 							},
 							"response": []
 						},
@@ -122,22 +94,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Messages",
-										"MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -303,22 +260,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Messages",
-										"MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -327,22 +269,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Messages",
-										"MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						}
@@ -358,24 +285,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Media/MEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Messages",
-										"MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Media",
-										"MEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Media/MEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -415,24 +325,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Media/MEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Messages",
-										"MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Media",
-										"MEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Messages/MMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Media/MEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						}
@@ -465,19 +358,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://messaging.twilio.com/v1/Services",
-									"protocol": "https",
-									"host": [
-										"messaging",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Services"
-									]
-								}
+								"url": "https://messaging.twilio.com/v1/Services"
 							},
 							"response": []
 						},
@@ -486,20 +367,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://messaging.twilio.com/v1/Services/MGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-									"protocol": "https",
-									"host": [
-										"messaging",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Services",
-										"MGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-									]
-								}
+								"url": "https://messaging.twilio.com/v1/Services/MGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 							},
 							"response": []
 						},
@@ -552,20 +420,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://messaging.twilio.com/v1/Services/MGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-									"protocol": "https",
-									"host": [
-										"messaging",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Services",
-										"MGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-									]
-								}
+								"url": "https://messaging.twilio.com/v1/Services/MGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 							},
 							"response": []
 						},
@@ -574,20 +429,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": {
-									"raw": "https://messaging.twilio.com/v1/Services/MGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-									"protocol": "https",
-									"host": [
-										"messaging",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Services",
-										"MGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-									]
-								}
+								"url": "https://messaging.twilio.com/v1/Services/MGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 							},
 							"response": []
 						}
@@ -603,20 +445,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://pricing.twilio.com/v1/Messaging/Countries",
-									"protocol": "https",
-									"host": [
-										"pricing",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Messaging",
-										"Countries"
-									]
-								}
+								"url": "https://pricing.twilio.com/v1/Messaging/Countries"
 							},
 							"response": []
 						},
@@ -625,21 +454,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://pricing.twilio.com/v1/Messaging/Countries/US",
-									"protocol": "https",
-									"host": [
-										"pricing",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Messaging",
-										"Countries",
-										"US"
-									]
-								}
+								"url": "https://pricing.twilio.com/v1/Messaging/Countries/US"
 							},
 							"response": []
 						}
@@ -688,21 +503,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls.json"
 							},
 							"response": []
 						},
@@ -812,21 +613,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls.json"
 							},
 							"response": []
 						},
@@ -835,22 +622,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -1095,22 +867,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -1136,22 +893,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -1160,22 +902,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						}
@@ -1216,23 +943,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Feedback.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Feedback.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Feedback.json"
 							},
 							"response": []
 						},
@@ -1241,23 +952,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls//Feedback.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls",
-										"",
-										"Feedback.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls//Feedback.json"
 							},
 							"response": []
 						},
@@ -1294,22 +989,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/FeedbackSummary.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls",
-										"FeedbackSummary.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/FeedbackSummary.json"
 							},
 							"response": []
 						},
@@ -1318,23 +998,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/FeedbackSummary/FSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls",
-										"FeedbackSummary",
-										"FSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/FeedbackSummary/FSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -1343,23 +1007,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/FeedbackSummary/FSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls",
-										"FeedbackSummary",
-										"FSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/FeedbackSummary/FSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						}
@@ -1375,22 +1023,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Conferences",
-										"CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -1556,22 +1189,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Conferences",
-										"CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -1597,22 +1215,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Conferences",
-										"CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -1621,23 +1224,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Conferences",
-										"CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Recordings.json"
-									]
-								},
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings.json",
 								"description": "The following will return a list of all of the recordings generated for a given conference, identified by its ConferenceSid. (Note that recordings associated with an individual call leg of the conference will not be returned.)"
 							},
 							"response": []
@@ -1647,23 +1234,7 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Conferences",
-										"CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Participants.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants.json"
 							},
 							"response": []
 						},
@@ -1672,24 +1243,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Conferences",
-										"CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Participants",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -1729,24 +1283,7 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Conferences",
-										"CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Participants",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -1755,24 +1292,7 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Conferences",
-										"CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Participants",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -1781,24 +1301,7 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Conferences",
-										"CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Participants",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -1807,24 +1310,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Conferences",
-										"CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Participants",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						}
@@ -1840,22 +1326,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/OutgoingCallerIds/PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"OutgoingCallerIds",
-										"PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/OutgoingCallerIds/PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -1910,22 +1381,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/OutgoingCallerIds/PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"OutgoingCallerIds",
-										"PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/OutgoingCallerIds/PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -1934,22 +1390,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/OutgoingCallerIds/PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"OutgoingCallerIds",
-										"PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/OutgoingCallerIds/PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -1958,9 +1399,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": ""
-								},
+								"url": "",
 								"description": "Adds a new CallerID to your account. After making this request, Twilio will return to you a validation code and Twilio will dial the phone number given to perform validation. The code returned must be entered via the phone before the CallerID is added to your account."
 							},
 							"response": []
@@ -2005,9 +1444,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": ""
-								}
+								"url": ""
 							},
 							"response": []
 						},
@@ -2016,21 +1453,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://voice.twilio.com/v1/DialingPermissions/Countries/US",
-									"protocol": "https",
-									"host": [
-										"voice",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"DialingPermissions",
-										"Countries",
-										"US"
-									]
-								}
+								"url": "https://voice.twilio.com/v1/DialingPermissions/Countries/US"
 							},
 							"response": []
 						},
@@ -2056,20 +1479,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://voice.twilio.com/v1/DialingPermissions/BulkCountryUpdates",
-									"protocol": "https",
-									"host": [
-										"voice",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"DialingPermissions",
-										"BulkCountryUpdates"
-									]
-								}
+								"url": "https://voice.twilio.com/v1/DialingPermissions/BulkCountryUpdates"
 							},
 							"response": []
 						},
@@ -2078,9 +1488,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": ""
-								}
+								"url": ""
 							},
 							"response": []
 						},
@@ -2119,19 +1527,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://voice.twilio.com/v1/Settings",
-									"protocol": "https",
-									"host": [
-										"voice",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Settings"
-									]
-								}
+								"url": "https://voice.twilio.com/v1/Settings"
 							},
 							"response": []
 						},
@@ -2157,19 +1553,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://voice.twilio.com/v1/Settings",
-									"protocol": "https",
-									"host": [
-										"voice",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Settings"
-									]
-								}
+								"url": "https://voice.twilio.com/v1/Settings"
 							},
 							"response": []
 						}
@@ -2209,21 +1593,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Queues.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Queues.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Queues.json"
 							},
 							"response": []
 						},
@@ -2232,22 +1602,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Queues/QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Queues",
-										"QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Queues/QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -2256,21 +1611,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Queues.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Queues.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Queues.json"
 							},
 							"response": []
 						},
@@ -2303,22 +1644,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Queues/QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Queues",
-										"QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Queues/QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -2327,22 +1653,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID/Queues/QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID",
-										"Queues",
-										"QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID/Queues/QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -2351,24 +1662,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Queues/QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Members/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Queues",
-										"QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Members",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Queues/QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Members/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -2400,24 +1694,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Queues/QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Members/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Queues",
-										"QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Members",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Queues/QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Members/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -2426,23 +1703,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Queues/QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Members.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Queues",
-										"QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Members.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Queues/QUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Members.json"
 							},
 							"response": []
 						}
@@ -2458,23 +1719,7 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Recordings.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings.json"
 							},
 							"response": []
 						},
@@ -2510,23 +1755,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Recordings.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings.json"
 							},
 							"response": []
 						},
@@ -2535,22 +1764,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Recordings/REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Recordings",
-										"REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Recordings/REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -2713,24 +1927,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings/REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Recordings",
-										"REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings/REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -2756,24 +1953,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings/REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Conferences",
-										"CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Recordings",
-										"REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Conferences/CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings/REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -2799,24 +1979,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings/Twilio.CURRENT.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Recordings",
-										"Twilio.CURRENT.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings/Twilio.CURRENT.json"
 							},
 							"response": []
 						},
@@ -2842,24 +2005,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings/REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Recordings",
-										"REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings/REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -2885,24 +2031,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings/REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Calls",
-										"CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Recordings",
-										"REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Calls/CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Recordings/REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -2911,22 +2040,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Recordings/REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Recordings",
-										"REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Recordings/REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						}
@@ -2942,22 +2056,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Transcriptions/TRXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Transcriptions",
-										"TRXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Transcriptions/TRXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -2995,22 +2094,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Transcriptions/TRXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"Transcriptions",
-										"TRXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/Transcriptions/TRXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						}
@@ -3059,22 +2143,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/IncomingPhoneNumbers/PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json",
-									"protocol": "https",
-									"host": [
-										"api",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"2010-04-01",
-										"Accounts",
-										"{{AccountSID}}",
-										"IncomingPhoneNumbers",
-										"PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
-									]
-								}
+								"url": "https://api.twilio.com/2010-04-01/Accounts/{{AccountSID}}/IncomingPhoneNumbers/PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.json"
 							},
 							"response": []
 						},
@@ -3083,9 +2152,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": ""
-								}
+								"url": ""
 							},
 							"response": []
 						}
@@ -3158,19 +2225,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "https://conversations.twilio.com/v1/Conversations",
-									"protocol": "https",
-									"host": [
-										"conversations",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Conversations"
-									]
-								}
+								"url": "https://conversations.twilio.com/v1/Conversations"
 							},
 							"response": []
 						},
@@ -3179,20 +2234,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://conversations.twilio.com/v1/Conversations/CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-									"protocol": "https",
-									"host": [
-										"conversations",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Conversations",
-										"CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-									]
-								}
+								"url": "https://conversations.twilio.com/v1/Conversations/CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 							},
 							"response": []
 						},
@@ -3201,19 +2243,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://conversations.twilio.com/v1/Conversations",
-									"protocol": "https",
-									"host": [
-										"conversations",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Conversations"
-									]
-								}
+								"url": "https://conversations.twilio.com/v1/Conversations"
 							},
 							"response": []
 						},
@@ -3222,20 +2252,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": {
-									"raw": "https://conversations.twilio.com/v1/Conversations/CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-									"protocol": "https",
-									"host": [
-										"conversations",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Conversations",
-										"CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-									]
-								}
+								"url": "https://conversations.twilio.com/v1/Conversations/CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 							},
 							"response": []
 						}
@@ -3308,21 +2325,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://conversations.twilio.com/v1/Conversations/CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants",
-									"protocol": "https",
-									"host": [
-										"conversations",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Conversations",
-										"CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Participants"
-									]
-								}
+								"url": "https://conversations.twilio.com/v1/Conversations/CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants"
 							},
 							"response": []
 						},
@@ -3366,21 +2369,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "https://conversations.twilio.com/v1/Conversations/CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants",
-									"protocol": "https",
-									"host": [
-										"conversations",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Conversations",
-										"CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Participants"
-									]
-								}
+								"url": "https://conversations.twilio.com/v1/Conversations/CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants"
 							},
 							"response": []
 						},
@@ -3389,21 +2378,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://conversations.twilio.com/v1/Conversations/CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants",
-									"protocol": "https",
-									"host": [
-										"conversations",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Conversations",
-										"CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Participants"
-									]
-								}
+								"url": "https://conversations.twilio.com/v1/Conversations/CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants"
 							},
 							"response": []
 						},
@@ -3412,22 +2387,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": {
-									"raw": "https://conversations.twilio.com/v1/Conversations/CHXXXXXXXXXXX/Participants/MBXXXXXXXXXXXX",
-									"protocol": "https",
-									"host": [
-										"conversations",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Conversations",
-										"CHXXXXXXXXXXX",
-										"Participants",
-										"MBXXXXXXXXXXXX"
-									]
-								}
+								"url": "https://conversations.twilio.com/v1/Conversations/CHXXXXXXXXXXX/Participants/MBXXXXXXXXXXXX"
 							},
 							"response": []
 						},
@@ -3436,22 +2396,7 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"url": {
-									"raw": "https://conversations.twilio.com/v1/Conversations/CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants/MBXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-									"protocol": "https",
-									"host": [
-										"conversations",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v1",
-										"Conversations",
-										"CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Participants",
-										"MBXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-									]
-								}
+								"url": "https://conversations.twilio.com/v1/Conversations/CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Participants/MBXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 							},
 							"response": []
 						}
@@ -3473,21 +2418,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "https://chat.twilio.com/v2/Services/ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Channels",
-									"protocol": "https",
-									"host": [
-										"chat",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v2",
-										"Services",
-										"ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Channels"
-									]
-								}
+								"url": "https://chat.twilio.com/v2/Services/ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Channels"
 							},
 							"response": []
 						},
@@ -3513,22 +2444,7 @@
 										}
 									]
 								},
-								"url": {
-									"raw": "https://chat.twilio.com/v2/Services/ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Channels/CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-									"protocol": "https",
-									"host": [
-										"chat",
-										"twilio",
-										"com"
-									],
-									"path": [
-										"v2",
-										"Services",
-										"ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-										"Channels",
-										"CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-									]
-								}
+								"url": "https://chat.twilio.com/v2/Services/ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Channels/CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 							},
 							"response": []
 						}
@@ -3542,6 +2458,9 @@
 		{
 			"name": "Programmable Video",
 			"item": [],
+			"name": "JM Test",
+			"item": [],
+			"description": "JM Test",
 			"protocolProfileBehavior": {}
 		}
 	],
