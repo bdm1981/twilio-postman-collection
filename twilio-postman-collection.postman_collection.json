@@ -2458,6 +2458,9 @@
 		{
 			"name": "Programmable Video",
 			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
 			"name": "JM Test",
 			"item": [],
 			"description": "JM Test",
